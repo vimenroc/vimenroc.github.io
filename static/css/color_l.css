@@ -1,0 +1,22 @@
+/* 
+Colores principales sacados desde:
+https://realtimecolors.com/
+Sombras y luces desde:
+https://maketintsandshades.com/
+*/
+
+:root{
+    --text: #072214;
+    --background: #f6f3ed;
+    --primary: #92e8e6;
+    --secondary: #f9e1ed;
+    --accent: #d41d6d;
+    --background-contrast: #fff;
+    --background-contrast-rgb: 255,255,255;
+    
+    --text-rgb: 7, 34, 20;
+    --background-rgb: 213, 246, 229;
+    --primary-rgb: 146, 232, 230;
+    --secondary-rgb: 249, 225, 237;
+    --accent-rgb: 212, 29, 109;
+}

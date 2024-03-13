@@ -1,9 +1,305 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>page 2</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Inicio{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="static/img/fav.png">
+    <link id="color" rel="stylesheet"  href="static/css/color_l.css">
+    <link rel="stylesheet"  href="static/css/style.css">
 </head>
-<body>
-page 2
+<body >
+    <img src="static/img/computer.jpg" alt="" class="d-none">
+    <!-- {% block cuerpo %}{% endblock %} -->
+	<!-- {% extends "base.html" %} -->
+
+	<!-- {% block cuerpo %} -->
+    <div class="container">
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-12 d-flex">
+                        <h1>Perfil de desarrollador</h1>
+                        <span class="ml-auto">
+                            <label class="switch">
+                                <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
+                                <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>   
+                                <input id="switch-colores" type="checkbox" class="input">
+                                <span class="slider"></span>
+                            </label>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="row">
+            <div class="col-md-3">
+                
+                <!-- card perfil -->
+                <div class="card">
+                    <div class="card-body box-profile">
+                        <div class="text-center">
+                            <img class="profile-user-img img-fluid img-circle" src="https://i.ibb.co/mzT0GZ9/image.png" alt="User profile picture">
+                        </div>
+                        <h3 class="profile-username text-center">Víctor Manuel Mendoza Rocha</h3>
+                        <p class="text-center">Software Engineer</p>
+                        <ul class="list-group list-group-unbordered mb-3">
+                            <li class="list-group-item">
+                                Desarrollador con 7+ años de experiencia en desarrollo, enfocado principalmente en web, front-end y back-end.
+                            </li>
+                        </ul>
+                        <a href="https://www.linkedin.com/in/vimrc/" target=”_blank” class="btn btn-primary btn-block"><b><i class="fa-brands fa-linkedin-in"></i> LinkedIn</b></a>
+                    </div>
+                </div>
+                <!-- ./card perfil -->
+
+                <div class="card ">
+                    <div class="card-header">
+                        <h3 class="card-title">Acerca de mí</h3>
+                    </div>
+        
+                    <div class="card-body">
+                        <strong><i class="fas fa-book mr-1"></i> Educación</strong>
+                        <p class="">
+                            Licenciatura en Ciencia Computacionales, Facultad de Ciencias Físico-Matemáticas UANL
+                        </p>
+                        <hr>
+                        <strong><i class="fas fa-map-marker-alt mr-1"></i> Locación</strong>
+                        <p class="">Monterrey, Nuevo León, México</p>
+                        <hr>
+                        <strong><i class="fas fa-pencil-alt mr-1"></i> Habilidades</strong>
+                        <p class="" id = "mad-skillz"></p>
+                        <strong><i class="fas fa-file-alt mr-1"></i> Curriculum Vitae</strong>
+                        <span class="d-flex">
+                            
+                            <a target="_blank" href="{{ url_for('static', filename='files/CV_ENG.pdf') }}" class="ml-2"><i class="fa fa-file-pdf"></i> Inglés</a>
+                            <a target="_blank" href="{{ url_for('static', filename='files/CV.pdf') }}" class="ml-auto mr-2"><i class="fa fa-file-pdf"></i> Español</a>
+                        </span>
+                    </div>
+                </div>
+                <!-- ./card -->
+                
+            </div>
+        
+            
+            
+        
+            
+        <div class="col-md-9">
+            <div class="card" style="border: none; box-shadow:none; background-color: #00000000;">
+                <ul class="nav nav-tabs" id="myTab" role="tablist" style="border: none">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="experiencia-tab" data-bs-toggle="tab" data-bs-target="#experiencia-tab-pane" type="button" role="tab" aria-controls="experiencia-tab-pane" aria-selected="true">Experiencia</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Portfolio</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contacto</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">Certificaciones</button>
+                    </li>
+                </ul>
+                <div class="card-body" style="border: 1px solid rgba(var(--primary-rgb),.5); box-shadow: rgba(var(--primary-rgb), 0.6) 0px 2px 2px,rgba(var(--primary-rgb), 0.5) 0px 2px 2px -1px,rgba(var(--primary-rgb), 0.4) 0px -1px 0px inset;background-color: var(--background);background-image: linear-gradient(180deg,rgba(var(--background-contrast-rgb), .03) 0%,var(--background) 66%);">
+                    <div class="tab-content" id="myTabContent">
+                        
+                        <!-- Apartado de experiencia -->
+                        <div class="tab-pane fade show active" id="experiencia-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                        </div>
+                        <!-- ./Apartado de experiencia -->
+                        
+                        <!-- Apartado de portfolio -->
+                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                            <div class="post">
+                                <div class="user-block">
+                                    
+                                    <span class="">
+                                        <h5><a href="https://9e929dbb-9946-489a-8c48-70fdbd5d7234-00-3og98o0hfqisv.riker.replit.dev/">Fast Reading <i class="fa fa-link"></i></a></h5>
+                                    </span>
+                                    
+                                </div>
+                                <div class="proyecto-descripción">
+                                    Sitio con enfoque en aumentar la velocidad y comprensión de la lectura.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./Apartado de portfolio -->
+                        
+                        <!-- Apartado de contacto -->
+                        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                            <ul class="ml-4 mb-0 fa-ul">
+                                <li class="small"><span class="fa-li"><i class="fas fa-lg fa-envelope"></i></span> vimrc.06.89@gmail.com</li>
+                                
+                            </ul>
+                        </div>
+                        <!-- ./Apartado de contacto -->
+                        
+                        <!-- Apartado extra -->
+                        <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
+                            
+                            <div class="post">
+                                <div class="user-block">
+                                    
+                                    <span class="">
+                                        <h5>
+                                            <a href="https://www.efset.org/cert/soGfeh">
+                                                <i class="fa fa-certificate"></i> EF SET Certificate - Nivel C2
+                                            </a>
+                                        </h5>
+                                    </span>
+                                    
+                                </div>
+                                <div class="proyecto-descripción">
+                                    EF Standard English Test (EF SET) - Certificado de nivel de inglés.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./Apartado extra -->
+                        
+                    </div>    
+                </div>
+            </div>
+        </div>
+    
+
+    <!-- {% endblock %} -->
+
+    
+    
+
+    <footer>
+        <div class="" style="font-size: 12px;">            
+                <!-- Página hecha en python + flask -->
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/js/adminlte.min.js"></script>
+    
+    <!-- {% block sextras %}{% endblock %} -->
+    
+    <script>
+        
+		
+        let colores = 1;
+        $( document ).ready(function() {
+            AgregarHabilidades();
+            AgregarExperiencia();
+            $("#switch-colores").on("input", function(){
+                colores = CambiarColores(colores);
+            });
+        });
+        
+        function AgregarExperiencia(){
+            var tabExperiencia = $("#experiencia-tab-pane");
+            var experiencia = [
+                {
+                    empleador : "Gobierno del Estado de Nuevo León - Instituto Catastral y Registral",
+                    tiempo : "2023",
+                    puesto: "Ingeniero en Software",
+                    imagen: "",
+                    descripción : [
+                    "Desarrollo de sistemas internos usando diversas tecnologías o lenguajes de programación (.NET, MySQL, PostgreSQ).",
+                    "Desarrollo e implementación de diseño para front-end, y en ocasiones diseño desde 0.",
+                    ]
+                },
+                {
+                    empleador : "Gobierno del Estado de Nuevo León - Seretaría de Adminstración",
+                    tiempo : "2018 - 2023",
+                    puesto: "Analista de Sistemas",
+                    imagen: "",
+                    descripción : [
+                    "Como analista de sistemas, mi responsabilidad fue el mantenimiento y actualización de sistemas existentes, así como el desarrollo de nuevos sistemas internos.",
+                    "Agregando o administrando sistema de control de versiones, toma de requerimientos directamente con los clientes.",
+                    "Desarrollo de sistemas internos usando diversas tecnologías o lenguajes de programación.",
+                    "Desarrollo e implementación de diseño para front-end, y en ocasiones diseño desde 0.",
+                    "Configuración y mantenimiento de servidores.",
+                    ]
+                },
+                {
+                    empleador : "Human Quality",
+                    tiempo : "2017 - 2018",
+                    puesto: "Desarrollador Web",
+                    imagen: "",
+                    descripción : [
+                        "Desarrollo de aplicaciones internas, principalmente utilizando PHP y Javascript.",
+                        "Diseño de front-end",
+                    ]
+                },
+            ];
+            
+            
+            
+            experiencia.forEach(element => {
+                var tareas = $("<p>").text(element.descripción)
+                var descripciónTiempo = $("<span>").text(element.tiempo).addClass("ml-auto");
+                var descripciónPuesto = $("<span>").text(element.puesto);
+                var bloqueDescripción = $("<span>").addClass("description d-flex").append(descripciónPuesto).append(descripciónTiempo);
+                var empleadorNombre = $("<span>").addClass("username").text(element.empleador);
+                var empleadorImagen = $("<img>").addClass("img-circle img-bordered-sm").attr("src", "static/img/dev_icon.jpg");
+                var bloqueEmpleador = $("<div></div>").addClass("user-block").append(empleadorImagen).append(empleadorNombre).append(bloqueDescripción);
+                var post = $("<div></div>").addClass("post").append(bloqueEmpleador);
+                var listaTareas = $("<ul>");
+                element.descripción.forEach(descElement => {
+                    listaTareas.append($(`<li></li>`).addClass("empleo-tarea").text(descElement));
+                });
+                post.append(listaTareas);
+                tabExperiencia.append(post);
+            });
+        }
+        
+        function AgregarHabilidades(){
+            var back = ['PHP7/8', 'Python','Java','NET','MySQL'];
+            var front = ['Vue.js','Node.js','Javascript','.NET'];
+            var tech = ['GIT','Node.js','CodeIgniter3/4','Composer','npm','YARN'];
+            
+            $.each(back,function(i, v){
+                AgregarElementos(v, 'back');
+            });
+            $.each(front,function(i, v){
+                AgregarElementos(v, 'front');
+            });
+            $.each(tech,function(i, v){
+                AgregarElementos(v, 'tech');
+            });
+        }
+        
+        function AgregarElementos(etiqueta, tipo){
+            var contenedorLenguajes = $("#mad-skillz");
+            var elemento = `<span class="tag skill-${tipo}">${etiqueta}</span> `;
+            contenedorLenguajes.append(elemento);
+        }
+        
+        function CambiarColores(colores){
+                var baseURL = "static/css/";
+                var url = "";
+                if (colores == 1) {
+                    colores = 0;
+                    url = baseURL + "color_d.css";
+                }else{
+                    colores = 1;
+                    url = baseURL + "color_l.css";
+                }
+                
+            
+            $("#color").attr("href", url);
+            return colores;
+        }
+    
+    </script>
 </body>
 </html>
